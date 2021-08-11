@@ -23,7 +23,7 @@ const Nav = () => {
                 <ul className="flex items-center hidden space-x-8 lg:flex">
                     <li>
                         <Scroll
-                            activeClass="text-white"
+                            activeClass=""
                             to="about"
                             spy={true}
                             smooth={true}
@@ -36,7 +36,7 @@ const Nav = () => {
                     </li>
                     <li>
                         <Scroll
-                            activeClass="text-white"
+                            activeClass=""
                             to="portfolio"
                             spy={true}
                             smooth={true}
@@ -49,7 +49,7 @@ const Nav = () => {
                     </li>
                     <li>
                         <Scroll
-                            activeClass="text-white"
+                            activeClass=""
                             to="contact"
                             spy={true}
                             smooth={true}
@@ -87,27 +87,45 @@ const Nav = () => {
                         <div className="w-full inline-block text-left ">
                             <div className="mr-4 origin-top-right absolute right-0 mt-3 w-1/2 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5">
                                 <div className="py-1 " role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                                    <a href="#" className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600" role="menuitem">
+                                    <Scroll
+                                        activeClass=""
+                                        to="about"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-150}
+                                        duration={500}
+                                        className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600"
+                                    >
                                         <span className="flex flex-col">
-                                            <span>
-                                                About Me
-                                            </span>
+                                            <p>About Me</p>
                                         </span>
-                                    </a>
-                                    <a href="#" className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600" role="menuitem">
+                                    </Scroll>
+                                    <Scroll
+                                        activeClass=""
+                                        to="portfolio"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-150}
+                                        duration={500}
+                                        className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600"
+                                    >
                                         <span className="flex flex-col">
-                                            <span>
-                                                Portfolio
-                                            </span>
+                                            <p>Portfolio</p>
                                         </span>
-                                    </a>
-                                    <a href="#" className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600" role="menuitem">
+                                    </Scroll>
+                                    <Scroll
+                                        activeClass=""
+                                        to="contact"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-150}
+                                        duration={500}
+                                        className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600"
+                                    >
                                         <span className="flex flex-col">
-                                            <span>
-                                                Contact
-                                            </span>
+                                            <p>Contact</p>
                                         </span>
-                                    </a>
+                                    </Scroll>
                                 </div>
                             </div>
                         </div>
