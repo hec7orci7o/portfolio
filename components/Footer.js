@@ -10,7 +10,7 @@ const Footer = () => {
                         to="about"
                         spy={true}
                         smooth={true}
-                        offset={-80}
+                        offset={-70}
                         duration={500}
                         className="cursor-pointer text-base text-center px-5 py-2 font-medium text-gray-600 hover:text-black capitalize"
                     >
@@ -21,7 +21,7 @@ const Footer = () => {
                         to="portfolio"
                         spy={true}
                         smooth={true}
-                        offset={-80}
+                        offset={-100}
                         duration={500}
                         className="cursor-pointer text-base text-center px-5 py-2 font-medium text-gray-600 hover:text-black capitalize"
                     >
@@ -32,7 +32,7 @@ const Footer = () => {
                         to="contact"
                         spy={true}
                         smooth={true}
-                        offset={-80}
+                        offset={0}
                         duration={500}
                         className="cursor-pointer text-base text-center px-5 py-2 font-medium text-gray-600 hover:text-black capitalize"
                     >

@@ -34,11 +34,70 @@ const Home = () => {
 
     return (
         <Fragment>
-            <div>
-            </div>
             <Header />
+
+            {/* About Me */}
+            <section id='about' className="mt-16">
+                <div className="container flex flex-col items-center px-5 py-8 mx-auto">
+                    <div className="flex flex-col w-full text-left lg:text-center">
+                        <h1 className="text-3xl font-extrabold leading-tight capitalize mx-auto mb-4 tracking-tighter text-black lg:w-1/2 lg:text-3xl title-font">
+                            who am i?
+                        </h1>
+                        <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 lg:w-1/2">
+                            I thought it would be easier to think of what to put here but since I can't think of anything let me give you a glimpse of my hobbies.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section className="text-gray-600 body-font">
+                <div className="container px-5 mx-auto pb-8">
+                    <div className="flex flex-wrap">
+                        <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                            <div className="inline-flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mb-1.5 " fill="black" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M16.97 4.757a.999.999 0 0 0-1.918-.073l-3.186 9.554-2.952-6.644a1.002 1.002 0 0 0-1.843.034L5.323 12H2v2h3.323c.823 0 1.552-.494 1.856-1.257l.869-2.172 3.037 6.835c.162.363.521.594.915.594l.048-.001a.998.998 0 0 0 .9-.683l2.914-8.742.979 3.911A1.995 1.995 0 0 0 18.781 14H22v-2h-3.22l-1.81-7.243z" />
+                                </svg>
+                                <h2 className="ml-1.5 text-lg sm:text-xl text-gray-900 font-medium title-font mb-2 capitalize">peace</h2>
+                            </div>
+                            <p className="leading-relaxed text-sm mb-4">I love sitting looking at the sea and getting lost in my thoughts in a quiet place.</p>
+                        </div>
+                        <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                            <div className="inline-flex items-center" >
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mb-1.5" fill="black" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M6 5v14h3v-6h6v6h3V5h-3v6H9V5zM3 15a1 1 0 0 0 1 1h1V8H4a1 1 0 0 0-1 1v2H2v2h1v2zm18-6a1 1 0 0 0-1-1h-1v8h1a1 1 0 0 0 1-1v-2h1v-2h-1V9z" />
+                                </svg>
+                                <h2 className="ml-1.5 text-lg sm:text-xl text-gray-900 font-medium title-font mb-2 capitalize">sports</h2>
+                            </div>
+                            <p className="leading-relaxed text-sm mb-4">Just as I like to be calm, I love to move and work out whenever I can.</p>
+                        </div>
+                        <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                            <div className="inline-flex items-center" >
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mb-1.5" fill="black" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M19.864 8.465a3.505 3.505 0 0 0-3.03-4.449A3.005 3.005 0 0 0 14 2a2.98 2.98 0 0 0-2 .78A2.98 2.98 0 0 0 10 2c-1.301 0-2.41.831-2.825 2.015a3.505 3.505 0 0 0-3.039 4.45A4.028 4.028 0 0 0 2 12c0 1.075.428 2.086 1.172 2.832A4.067 4.067 0 0 0 3 16c0 1.957 1.412 3.59 3.306 3.934A3.515 3.515 0 0 0 9.5 22c.979 0 1.864-.407 2.5-1.059A3.484 3.484 0 0 0 14.5 22a3.51 3.51 0 0 0 3.19-2.06 4.006 4.006 0 0 0 3.138-5.108A4.003 4.003 0 0 0 22 12a4.028 4.028 0 0 0-2.136-3.535zM9.5 20c-.711 0-1.33-.504-1.47-1.198L7.818 18H7c-1.103 0-2-.897-2-2 0-.352.085-.682.253-.981l.456-.816-.784-.51A2.019 2.019 0 0 1 4 12c0-.977.723-1.824 1.682-1.972l1.693-.26-1.059-1.346a1.502 1.502 0 0 1 1.498-2.39L9 6.207V5a1 1 0 0 1 2 0v13.5c0 .827-.673 1.5-1.5 1.5zm9.575-6.308-.784.51.456.816c.168.3.253.63.253.982 0 1.103-.897 2-2.05 2h-.818l-.162.802A1.502 1.502 0 0 1 14.5 20c-.827 0-1.5-.673-1.5-1.5V5c0-.552.448-1 1-1s1 .448 1 1.05v1.207l1.186-.225a1.502 1.502 0 0 1 1.498 2.39l-1.059 1.347 1.693.26A2.002 2.002 0 0 1 20 12c0 .683-.346 1.315-.925 1.692z" />
+                                </svg>
+                                <h2 className="ml-1.5 text-lg sm:text-xl text-gray-900 font-medium title-font mb-2 capitalize">knowledge</h2>
+                            </div>
+                            <p className="leading-relaxed text-sm mb-4">I consider myself a very practical person who hates ignorance, that is to say, I like to know why things happen.</p>
+                        </div>
+                        <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                            <div className="inline-flex items-center" >
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mb-1" fill="black" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M20.92 2.38A15.72 15.72 0 0 0 17.5 2a8.26 8.26 0 0 0-6 2.06Q9.89 5.67 8.31 7.27c-1.21-.13-4.08-.2-6 1.74a1 1 0 0 0 0 1.41l11.3 11.32a1 1 0 0 0 1.41 0c1.95-2 1.89-4.82 1.77-6l3.21-3.2c3.19-3.19 1.74-9.18 1.68-9.43a1 1 0 0 0-.76-.73zm-2.36 8.75L15 14.67a1 1 0 0 0-.27.9 6.81 6.81 0 0 1-.54 3.94L4.52 9.82a6.67 6.67 0 0 1 4-.5A1 1 0 0 0 9.39 9s1.4-1.45 3.51-3.56A6.61 6.61 0 0 1 17.5 4a14.51 14.51 0 0 1 2.33.2c.24 1.43.62 5.04-1.27 6.93z" />
+                                    <circle cx="15.73" cy="8.3" r="2" />
+                                    <path d="M5 16c-2 1-2 5-2 5a7.81 7.81 0 0 0 5-2z" />
+                                </svg>
+                                <h2 className="ml-1.5 text-lg sm:text-xl text-gray-900 font-medium title-font mb-2 capitalize">entrepreneurship</h2>
+                            </div>
+                            <p className="leading-relaxed text-sm mb-4">I believe that dreaming is fine, but it is better to have goals and achieve them.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
             <FeatureList />
-            <section className="mt-16">
+
+            {/* Technologies */}
+            <section className="mt-16 pt-8">
                 <div className="container flex flex-col items-center px-5 py-8 mx-auto">
                     <div className="flex flex-col w-full text-left lg:text-center">
                         <h1 className="text-3xl font-extrabold leading-tight capitalize mx-auto mb-4 tracking-tighter text-black lg:w-1/2 lg:text-3xl title-font">
@@ -52,10 +111,10 @@ const Home = () => {
             </section>
             <Logos />
 
-            <section id='portfolio' className="mt-16">
+            <section className="mt-16">
                 <div className="container flex flex-col items-center px-5 py-8 mx-auto">
                     <div className="flex flex-col w-full text-left lg:text-center">
-                        <h1 className="text-3xl font-extrabold leading-tight capitalize mx-auto mb-4 tracking-tighter text-black lg:w-1/2 lg:text-3xl title-font">
+                        <h1 id='portfolio' className="text-3xl font-extrabold leading-tight capitalize mx-auto mb-4 tracking-tighter text-black lg:w-1/2 lg:text-3xl title-font">
                             portfolio
                         </h1>
                         <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 lg:w-1/2">
@@ -64,9 +123,9 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <ProjectList folder={enterpriseProjects} color="border-blue-400"  category="Enterprise" description="Work done for companies." />
-            <ProjectList folder={hobbieProjects}     color="border-green-400" category="Hobbie"     description="Work done in my spare time." />
-            <ProjectList folder={universityProjects} color="border-red-400"   category="University" description="Work done during my time at the university, if you are a student, enjoy it." />
+            <ProjectList folder={enterpriseProjects} color="border-blue-400" category="Enterprise" description="Work done for companies." />
+            <ProjectList folder={hobbieProjects} color="border-green-400" category="Hobbie" description="Work done in my spare time." />
+            <ProjectList folder={universityProjects} color="border-red-400" category="University" description="Work done during my time at the university, if you are a student, enjoy it." />
 
             <section className="mt-32 flex flex-col items-center md:flex-row">
                 <div className="container mx-auto">
@@ -95,7 +154,7 @@ const Home = () => {
                                             <div className="w-full px-3 mb-6 md:w-1/2 md:mb-0">
                                                 <label className="text-base font-medium leading-relaxed text-gray-700 capitalize">
                                                     First name
-                                                    {errors?.name ? ( <span className="text-red-500 required-dot ml-0.5">*</span> ) : ( <Fragment></Fragment> )}
+                                                    {errors?.name ? (<span className="text-red-500 required-dot ml-0.5">*</span>) : (<Fragment></Fragment>)}
                                                 </label>
                                                 <div className="relative ">
                                                     <input
@@ -104,19 +163,19 @@ const Home = () => {
                                                         type="text"
                                                         placeholder="Steven"
                                                         className="focus:ring-2 focus:ring-black block w-full px-4 py-2 mt-2 text-base text-black transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-100 focus:outline-none focus:shadow-outline"
-                                                        {...register("name", { 
-                                                            required:{
+                                                        {...register("name", {
+                                                            required: {
                                                                 value: true,
                                                                 message: "Name required."
                                                             },
                                                             minLength: {
-                                                                value: 2, 
+                                                                value: 2,
                                                                 message: "Name is too short."
                                                             },
                                                             maxLength: {
                                                                 value: 15,
                                                                 message: "Name is too long."
-                                                            },pattern: {
+                                                            }, pattern: {
                                                                 value: /^[a-zA-Z]*$/,
                                                                 message: "Names should only contain text."
                                                             },
@@ -135,7 +194,7 @@ const Home = () => {
                                             <div className="w-full px-3 md:w-1/2">
                                                 <label className="text-base font-medium leading-relaxed text-gray-700 capitalize">
                                                     last name
-                                                    {errors?.lastName ? ( <span className="text-red-500 required-dot ml-0.5">*</span> ) : ( <Fragment></Fragment> )}
+                                                    {errors?.lastName ? (<span className="text-red-500 required-dot ml-0.5">*</span>) : (<Fragment></Fragment>)}
                                                 </label>
                                                 <div className="relative ">
                                                     <input
@@ -144,19 +203,19 @@ const Home = () => {
                                                         type="text"
                                                         placeholder="Matz"
                                                         className="focus:ring-2 focus:ring-black block w-full px-4 py-2 mt-2 text-base text-black transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-100 focus:outline-none focus:shadow-outline"
-                                                        {...register("lastName", { 
-                                                            required:{
+                                                        {...register("lastName", {
+                                                            required: {
                                                                 value: true,
                                                                 message: "Last name required."
                                                             },
                                                             minLength: {
-                                                                value: 2, 
+                                                                value: 2,
                                                                 message: "Last name is too short."
                                                             },
                                                             maxLength: {
                                                                 value: 15,
                                                                 message: "Last name is too long."
-                                                            },pattern: {
+                                                            }, pattern: {
                                                                 value: /^[a-zA-Z]*$/,
                                                                 message: "Last name should only contain text."
                                                             },
@@ -176,7 +235,7 @@ const Home = () => {
                                         <div className="mt-4">
                                             <label className="block text-base font-medium leading-relaxed text-gray-700">
                                                 Email Address
-                                                {errors?.email ? ( <span className="text-red-500 required-dot ml-0.5">*</span> ) : ( <Fragment></Fragment> )}
+                                                {errors?.email ? (<span className="text-red-500 required-dot ml-0.5">*</span>) : (<Fragment></Fragment>)}
                                             </label>
                                             <div className="relative ">
                                                 <input
@@ -185,8 +244,8 @@ const Home = () => {
                                                     type="email"
                                                     placeholder="StevenMatz@gmail.com"
                                                     className="focus:ring-2 focus:ring-black w-full px-4 py-2 mt-2 text-base transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-100 focus:outline-none focus:shadow-outline"
-                                                    {...register("email", { 
-                                                        required:{
+                                                    {...register("email", {
+                                                        required: {
                                                             value: true,
                                                             message: "Email required."
                                                         },
@@ -209,7 +268,7 @@ const Home = () => {
                                         <div className="mt-4">
                                             <label className="capitalize block text-base font-medium leading-relaxed text-gray-700">
                                                 message
-                                                {errors?.message ? ( <span className="text-red-500 required-dot ml-0.5">*</span> ) : ( <Fragment></Fragment> )}
+                                                {errors?.message ? (<span className="text-red-500 required-dot ml-0.5">*</span>) : (<Fragment></Fragment>)}
                                             </label>
                                             <div className="relative ">
                                                 <textarea
@@ -218,17 +277,17 @@ const Home = () => {
                                                     type="text"
                                                     placeholder="Your message goes here..."
                                                     className="focus:ring-2 focus:ring-black h-24 resize-none w-full px-4 py-2 mt-2 text-base transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-100 focus:outline-none focus:shadow-outline"
-                                                    {...register("message", { 
-                                                        required:{
+                                                    {...register("message", {
+                                                        required: {
                                                             value: true,
                                                             message: "Message is required."
                                                         },
                                                         minLength: {
-                                                            value: 7, 
+                                                            value: 7,
                                                             message: "Please, write something else."
                                                         },
                                                         maxLength: {
-                                                            value: 300, 
+                                                            value: 300,
                                                             message: "Please, write something shorter."
                                                         },
                                                     })}
