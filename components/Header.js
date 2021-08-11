@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import img from "/public/me/me.jpg"
+import foto from "/public/me/foto.jpg"
 
 import { Link as Scroll } from "react-scroll";
 
@@ -30,8 +31,8 @@ const Header = () => {
                 </div>
                 <div className="mr-4 relative h-96 lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
                     <Image
-                        src={img}
-                        className="z-10 rounded-lg object-center"
+                        src={foto}
+                        className="z-10 rounded-lg object-center filter brightness-80"
                         alt="Picture of the author"
                         layout="fill"
                         objectFit="cover"
