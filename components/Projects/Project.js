@@ -13,7 +13,7 @@ const Project = ({ name, description, repo, site }) => {
                     className="relative m-4 bg-white border rounded-lg shadow-md p-5"
                     style={{ width: "260px", height: "125px" }}
                 >
-                    <h2 className="text-xs font-semibold tracking-widest text-black uppercase title-font truncate">{description}</h2>
+                    <h2 className="text-xs font-semibold tracking-widest text-black opacity-90 uppercase title-font truncate">{description}</h2>
                     <h4 className="font-semibold leading-none tracking-tighter text-black mt-1 text-2xl title-font truncate">{name}</h4>
                     <div className="absolute bottom-0 right-0 flex justify-end mb-3 mr-4">
                         {repo != "" ? (
@@ -29,7 +29,7 @@ const Project = ({ name, description, repo, site }) => {
                                     text={repo + ".git"}
                                     onCopy={() => setCopy(true)}
                                 >
-                                    <button className="text-sm font-semibold text-black uppercase hover:text-blue-600 mr-2" title="share">
+                                    <button className="text-sm font-semibold text-black uppercase hover:text-blue-600 mr-2" title="copy">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                                         </svg>
@@ -40,7 +40,7 @@ const Project = ({ name, description, repo, site }) => {
 
                         {site != "" ? (
                             <Link href={site}>
-                                <a className="text-sm font-semibold text-black uppercase hover:text-blue-600" title="share">
+                                <a className="text-sm font-semibold text-black uppercase hover:text-blue-600" title="view">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />

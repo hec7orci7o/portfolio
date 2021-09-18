@@ -53,7 +53,7 @@ const Nav = () => {
                             to="contact"
                             spy={true}
                             smooth={true}
-                            offset={0}
+                            offset={-225}
                             duration={500}
                             className={`cursor-pointer font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 ${navbar ? "" : "text-gray-300 hover:text-white"}`}
                         >
@@ -118,7 +118,7 @@ const Nav = () => {
                                         to="contact"
                                         spy={true}
                                         smooth={true}
-                                        offset={0}
+                                        offset={-225}
                                         duration={500}
                                         className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600"
                                     >

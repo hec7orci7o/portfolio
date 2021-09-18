@@ -14,7 +14,7 @@ const ButtonUp = () => {
     return (
         <button
             onClick={scrollToTop}
-            className="flex justify-center items-center rounded-md bg-black fixed"
+            className="z-50 flex justify-center items-center rounded-md bg-black fixed"
             style={{height: "60px", width: "60px", right: "50px", bottom: "50px"}}
         >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">

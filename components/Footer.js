@@ -32,7 +32,7 @@ const Footer = () => {
                         to="contact"
                         spy={true}
                         smooth={true}
-                        offset={0}
+                        offset={-225}
                         duration={500}
                         className="cursor-pointer text-base text-center px-5 py-2 font-medium text-gray-600 hover:text-black capitalize"
                     >

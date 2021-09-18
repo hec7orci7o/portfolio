@@ -13,7 +13,7 @@ const Header = () => {
                     <h1 className="z-10 title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Hi,
                         <br className="hidden lg:inline-block" />I'm Héctor.
                     </h1>
-                    <p className="z-10 mb-8 leading-relaxed ">A student of computer engineering driven by the desire to learn something new every day. <br />What am I doing now?</p>
+                    <p className="z-10 mb-8 leading-relaxed text-white opacity-75">A student of computer engineering driven by the desire to learn something new every day. <br />What am I doing now?</p>
                     <div className="flex justify-center">
                         <Scroll
                             activeClass="text-white"
@@ -22,11 +22,11 @@ const Header = () => {
                             smooth={true}
                             offset={-150}
                             duration={500}
-                            className="cursor-pointer font-normal w-36 justify-center z-10 inline-flex text-white bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-700 rounded text-lg"
+                            className="cursor-pointer font-semibold w-36 justify-center z-10 inline-flex text-white bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-700 rounded text-lg"
                         >
                             Contact
                         </Scroll>
-                        <button disabled className="disabled:opacity-50 font-normal w-36 justify-center z-10 ml-4 inline-flex text-white border-2 border-white py-2 px-6 focus:outline-none hover:bg-gray-900 hover:text-white rounded text-lg">CV</button>
+                        <button disabled className="disabled:opacity-50 font-semibold w-36 justify-center z-10 ml-4 inline-flex text-white border-2 border-white py-1 px-6 focus:outline-none hover:text-white rounded text-lg">CV</button>
                     </div>
                 </div>
                 <div className="mr-4 relative h-96 lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
