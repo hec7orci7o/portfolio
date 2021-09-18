@@ -20,7 +20,7 @@ const Header = () => {
                             to="contact"
                             spy={true}
                             smooth={true}
-                            offset={-150}
+                            offset={-225}
                             duration={500}
                             className="cursor-pointer font-semibold w-36 justify-center z-10 inline-flex text-white bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-700 rounded text-lg"
                         >
