@@ -26,7 +26,7 @@ const Header = () => {
                         >
                             Contact
                         </Scroll>
-                        <button disabled className="disabled:opacity-50 font-semibold w-36 justify-center z-10 ml-4 inline-flex text-white border-2 border-white py-1 px-6 focus:outline-none hover:text-white rounded text-lg">CV</button>
+                        <button disabled className="cursor-not-allowed disabled:opacity-50 font-semibold w-36 justify-center z-10 ml-4 inline-flex text-white border-2 border-white py-1 px-6 focus:outline-none hover:text-white rounded text-lg">CV</button>
                     </div>
                 </div>
                 <div className="mr-4 relative h-96 lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
