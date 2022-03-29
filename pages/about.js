@@ -23,7 +23,7 @@ export default function Home() {
             text={
               <>
                 <p>
-                  Hi, I'm Hector, a student of computer engineering at the
+                  Hi, I&apos;m Hector, a student of computer engineering at the
                   university of university of zaragoza moved by the desire to
                   learn something new every day.
                 </p>
@@ -64,9 +64,9 @@ export default function Home() {
             text={
               <>
                 <p>
-                  It's always good to go well equipped to the places where you
-                  are needed, that's why I try to keep my tools updated as well
-                  as my knowledge about them.
+                  It&apos;s always good to go well equipped to the places where
+                  you are needed, that&apos;s why I try to keep my tools updated
+                  as well as my knowledge about them.
                 </p>
                 <p>
                   Apart from the ones you can see below, I also have knowledge
@@ -141,35 +141,6 @@ export default function Home() {
           </div>
         </motion.div>
       </div>
-
-      {/* <div className="h-full flex items-center justify-center">
-        <div className="flex-1 h-full flex items-center justify-center">
-          <Content
-            title="My Path"
-            text={
-              <>
-                Massa posuere dictum viverra at pellentesque etiam. Id
-                scelerisque nunc magna porttitor varius et, nec senectus. Nibh
-                duis in molestie eros, vitae eu. Ullamcorper integer nunc,
-                sollicitudin convallis id.
-                <br />
-                Non ut sit amet mauris neque. Sapien, interdum ipsum vitae
-                risus.
-              </>
-            }
-          />
-        </div>
-        <div className="flex-1 h-full flex items-center justify-center">
-          <div className="w-96 h-96 relative">
-            <Image
-              src="https://images.unsplash.com/photo-1648468091744-a7fb8ed4e515?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-              alt="Picture of the author"
-              layout="fill"
-              className="object-cover"
-            />
-          </div>
-        </div> 
-      </div>*/}
     </motion.div>
   );
 }

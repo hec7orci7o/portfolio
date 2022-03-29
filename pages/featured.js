@@ -17,8 +17,8 @@ export default function Featured() {
               <p>These are the projects best rated by my community.</p>
               <p>
                 HotAsm is a tool that simplifies the workflow in some subjects
-                of the career as "IC" or "AOC2" allowing to save a lot of time
-                to their students.
+                of the career as &quot;IC&quot; or &quot;AOC2&quot; allowing to
+                save a lot of time to their students.
               </p>
               <p>
                 On the other hand, BIdeas is an online coworking that I made

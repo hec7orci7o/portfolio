@@ -21,8 +21,8 @@ export default function Latest({ allWork }) {
                 always visit and take a look.
               </p>
               <p>
-                If you have any suggestion about any of them don't hesitate to
-                contact me, any kind of constructive criticism is welcome.
+                If you have any suggestion about any of them don&apos;t hesitate
+                to contact me, any kind of constructive criticism is welcome.
               </p>
             </>
           }
