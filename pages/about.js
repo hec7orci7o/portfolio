@@ -12,6 +12,7 @@ import {
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import { FadeInUp, Stagger, Tool } from "../animations/About";
+import me from "/public/me.jpg";
 
 export default function Home() {
   return (
@@ -48,7 +49,7 @@ export default function Home() {
             className="w-96 h-96 relative"
           >
             <Image
-              src="https://images.unsplash.com/photo-1648468091744-a7fb8ed4e515?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              src={me}
               alt="Picture of the author"
               layout="fill"
               className="object-cover"
