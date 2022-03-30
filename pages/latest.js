@@ -56,7 +56,9 @@ export default function Latest({ allWork }) {
 }
 
 export async function getServerSideProps() {
-  const { data: allWork } = await fetch("http://localhost:3000/api/github?q=6")
+  const { data: allWork } = await fetch(
+    `${process.env.NEXT_URL}/api/github?q=6`
+  )
     .then((res) => res.json())
     .catch((err) => console.error(err));
   return {

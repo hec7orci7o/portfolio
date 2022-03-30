@@ -38,7 +38,7 @@ export default function All({ allWork }) {
 
 export async function getServerSideProps() {
   const { data: allWork } = await fetch(
-    "http://localhost:3000/api/github?q=all"
+    `${process.env.NEXT_URL}/api/github?q=all`
   )
     .then((res) => res.json())
     .catch((err) => console.error(err));
