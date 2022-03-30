@@ -38,10 +38,7 @@ export default function Latest({ allWork }) {
           {allWork.map((i) => (
             <Card2
               key={i.id}
-              img={
-                work[i.id] ||
-                "https://images.unsplash.com/photo-1627483262769-04d0a1401487?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-              }
+              img={work[i.id]}
               resource={i.html_url}
               title={String(i.name).replace("-", " ")}
               category={String(i.topics[0]).replace("-", " ")}
