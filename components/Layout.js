@@ -2,11 +2,9 @@ import Navbar from "./Navbar";
 
 export default function Layout({ children }) {
   return (
-    <div>
+    <div className="container mx-auto">
       <Navbar />
-      <main className="h-screen container mx-auto scroll-smooth">
-        {children}
-      </main>
+      <main className="container mx-auto scroll-smooth">{children}</main>
     </div>
   );
 }

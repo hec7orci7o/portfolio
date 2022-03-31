@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Content from "../components/Content";
+import { isMobileOnly } from "react-device-detect";
+import { motion } from "framer-motion";
 import {
   SiLinux,
   SiDocker,
@@ -10,14 +11,14 @@ import {
   SiReact,
   SiExpress,
 } from "react-icons/si";
-import { motion } from "framer-motion";
+import Content from "../components/Content";
 import { FadeInUp, Stagger, Tool } from "../animations/About";
 import me from "/public/me.jpg";
 
 export default function Home() {
   return (
     <motion.div exit={{ opacity: 0 }} className="h-full">
-      <div className="h-full flex items-center justify-center">
+      <div className="h-full flex flex-col md:flex-row gap-10 items-center justify-center sm:mt-16 md:mt-32 py-10">
         <div className="flex-1 h-full flex items-center justify-center">
           <Content
             title="Who Am I"
@@ -46,7 +47,7 @@ export default function Home() {
             initial="initial"
             animate="animate"
             variants={FadeInUp}
-            className="w-96 h-96 relative"
+            className="w-80 h-80 sm:w-96 sm:h-96 relative"
           >
             <Image
               src={me}
@@ -58,7 +59,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="h-full flex items-center justify-center">
+      <div className="h-full flex flex-col md:flex-row gap-10 items-center justify-center sm:mt-16 md:mt-96 py-10 mb-16 sm:mb-32 md:mb-64">
         <div className="flex-1 h-full flex items-center justify-center">
           <Content
             title="My Toolkit"
@@ -86,60 +87,124 @@ export default function Home() {
           viewport={{ once: true, amount: 0.4 }}
           className="flex-1 h-full flex flex-col items-center justify-center gap-2"
         >
-          <motion.div
-            variants={Tool}
-            className="flex items-center justify-center w-36 h-16 shadow hover:text-red-600"
-          >
-            <SiLinux className="text-4xl" />
-          </motion.div>
-          <div className="flex gap-2">
-            <motion.div
-              variants={Tool}
-              className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-600"
-            >
-              <SiDocker className="text-4xl" />
-            </motion.div>
-            <motion.div
-              variants={Tool}
-              className="flex items-center justify-center w-36 h-16 shadow hover:text-orange-500"
-            >
-              <SiGit className="text-4xl" />
-            </motion.div>
-          </div>
-          <div className="flex gap-2">
-            <motion.div
-              variants={Tool}
-              className="flex items-center justify-center w-36 h-16 shadow hover:text-indigo-800"
-            >
-              <SiCplusplus className="text-4xl" />
-            </motion.div>
-            <motion.div
-              variants={Tool}
-              className="flex items-center justify-center w-36 h-16 shadow hover:text-yellow-300"
-            >
-              <SiJavascript className="text-4xl" />
-            </motion.div>
-            <motion.div
-              variants={Tool}
-              className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-500"
-            >
-              <SiPython className="text-4xl" />
-            </motion.div>
-          </div>
-          <div className="flex gap-2">
-            <motion.div
-              variants={Tool}
-              className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-400"
-            >
-              <SiReact className="text-4xl" />
-            </motion.div>
-            <motion.div
-              variants={Tool}
-              className="flex items-center justify-center w-36 h-16 shadow hover:text-green-400"
-            >
-              <SiExpress className="text-4xl" />
-            </motion.div>
-          </div>
+          {!isMobileOnly ? (
+            <>
+              <motion.div
+                variants={Tool}
+                className="flex items-center justify-center w-36 h-16 shadow hover:text-red-600"
+              >
+                <SiLinux className="text-4xl" />
+              </motion.div>
+              <div className="flex gap-2">
+                <motion.div
+                  variants={Tool}
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-600"
+                >
+                  <SiDocker className="text-4xl" />
+                </motion.div>
+                <motion.div
+                  variants={Tool}
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-orange-500"
+                >
+                  <SiGit className="text-4xl" />
+                </motion.div>
+              </div>
+              <div className="flex gap-2">
+                <motion.div
+                  variants={Tool}
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-indigo-800"
+                >
+                  <SiCplusplus className="text-4xl" />
+                </motion.div>
+                <motion.div
+                  variants={Tool}
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-yellow-300"
+                >
+                  <SiJavascript className="text-4xl" />
+                </motion.div>
+                <motion.div
+                  variants={Tool}
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-500"
+                >
+                  <SiPython className="text-4xl" />
+                </motion.div>
+              </div>
+              <div className="flex gap-2">
+                <motion.div
+                  variants={Tool}
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-400"
+                >
+                  <SiReact className="text-4xl" />
+                </motion.div>
+                <motion.div
+                  variants={Tool}
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-green-400"
+                >
+                  <SiExpress className="text-4xl" />
+                </motion.div>
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="flex gap-2">
+                <motion.div
+                  variants={Tool}
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-red-600"
+                >
+                  <SiLinux className="text-4xl" />
+                </motion.div>
+                <motion.div
+                  variants={Tool}
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-orange-500"
+                >
+                  <SiGit className="text-4xl" />
+                </motion.div>
+              </div>
+
+              <div className="flex gap-2">
+                <motion.div
+                  variants={Tool}
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-600"
+                >
+                  <SiDocker className="text-4xl" />
+                </motion.div>
+                <motion.div
+                  variants={Tool}
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-indigo-800"
+                >
+                  <SiCplusplus className="text-4xl" />
+                </motion.div>
+              </div>
+              <div className="flex gap-2">
+                <motion.div
+                  variants={Tool}
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-yellow-300"
+                >
+                  <SiJavascript className="text-4xl" />
+                </motion.div>
+                <motion.div
+                  variants={Tool}
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-500"
+                >
+                  <SiPython className="text-4xl" />
+                </motion.div>
+              </div>
+              <div className="flex gap-2">
+                <motion.div
+                  variants={Tool}
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-400"
+                >
+                  <SiReact className="text-4xl" />
+                </motion.div>
+                <motion.div
+                  variants={Tool}
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-green-400"
+                >
+                  <SiExpress className="text-4xl" />
+                </motion.div>
+              </div>
+            </>
+          )}
         </motion.div>
       </div>
     </motion.div>

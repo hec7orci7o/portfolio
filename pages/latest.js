@@ -8,7 +8,7 @@ export default function Latest({ allWork }) {
   return (
     <motion.div
       exit={{ opacity: 0 }}
-      className="h-full flex items-center justify-center"
+      className="h-full flex flex-col xl:flex-row items-center justify-center gap-10 mt-10 xl:mt-28"
     >
       <div className="flex-1 h-full flex items-center justify-center">
         <Content
@@ -28,12 +28,12 @@ export default function Latest({ allWork }) {
           }
         />
       </div>
-      <div className="flex-1 h-full flex flex-col items-center justify-center">
+      <div className="flex-1 h-full flex items-center justify-center">
         <motion.div
           initial="initial"
           animate="animate"
           variants={stagger}
-          className="w-4/5 flex flex-wrap gap-2 justify-center"
+          className="max-w-prose xl:w-full flex flex-wrap gap-2 justify-center"
         >
           {allWork.map((i) => (
             <Card2

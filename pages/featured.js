@@ -7,9 +7,9 @@ export default function Featured() {
   return (
     <motion.div
       exit={{ opacity: 0 }}
-      className="h-full flex items-center justify-center"
+      className="flex flex-col xl:flex-row items-center justify-center py-10 gap-10 mt-24"
     >
-      <div className="flex-1 h-full flex items-center justify-center">
+      <div className="flex-1 flex items-center justify-center">
         <Content
           title="Featured"
           text={
@@ -30,12 +30,12 @@ export default function Featured() {
         />
       </div>
       <div className="flex-1 h-full flex items-center justify-center">
-        <div className="w-full flex gap-x-4 justify-center">
+        <div className="w-full flex flex-wrap gap-x-4 gap-y-10 justify-center">
           <motion.div
             initial="initial"
             animate="animate"
             variants={FadeInUp}
-            className={`w-2/5 h-[28rem] max-h-[28rem] flex flex-col gap-y-2 bg-pink-300 p-2`}
+            className={`w-72 h-[28rem] sm:w-64 sm:h-[24rem] xl:w-72 xl:h-[28rem] max-h-[28rem] flex flex-col gap-y-2 bg-pink-300 p-2`}
           >
             <Card1
               src={"https://hotasm.vercel.app/"}
@@ -52,7 +52,7 @@ export default function Featured() {
             initial="initial"
             animate="animate"
             variants={FadeInDown}
-            className={`w-2/5 h-[28rem] max-h-[28rem] flex flex-col gap-y-2 bg-yellow-300 p-2`}
+            className={`w-72 h-[28rem] sm:w-64 sm:h-[24rem] xl:w-72 xl:h-[28rem] max-h-[28rem] flex flex-col gap-y-2 bg-yellow-300 p-2`}
           >
             <Card1
               src={"https://bideas.herokuapp.com/"}

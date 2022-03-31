@@ -8,13 +8,13 @@ export default function All({ allWork }) {
   return (
     <motion.div
       exit={{ opacity: 0 }}
-      className="h-full mt-40 flex justify-center"
+      className="flex justify-center gap-1 sm:gap-2 md:gap-3 mt-10"
     >
       <motion.div
         initial="initial"
         animate="animate"
         variants={stagger}
-        className="container px-10 flex flex-wrap gap-2 justify-start"
+        className="container flex flex-wrap gap-1 sm:gap-2 md:gap-3 justify-start"
       >
         {allWork.map((i) => (
           <Card2

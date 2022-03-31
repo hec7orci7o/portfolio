@@ -7,7 +7,7 @@ export default function Card1({ src, img, title, description }) {
         href={src}
         target="_blank"
         rel="noopener noreferrer"
-        className="w-full h-72 min-h-[18rem] relative"
+        className="h-72 sm:h-60 xl:h-72 w-full relative"
       >
         <Image
           src={img}

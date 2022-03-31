@@ -12,7 +12,7 @@ export default function Card2({
   return (
     <motion.div
       variants={variants}
-      className="w-40 h-56 flex justify-center items-center relative"
+      className="w-28 h-44 sm:w-36 sm:h-52 md:w-40 md:h-56 flex justify-center items-center relative"
     >
       <div className="w-full h-full relative bg-black">
         <Image
