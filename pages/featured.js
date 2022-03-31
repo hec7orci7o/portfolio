@@ -31,14 +31,16 @@ export default function Featured() {
       </div>
       <div className="flex-1 h-full flex items-center justify-center">
         <div className="w-full flex flex-wrap gap-x-4 gap-y-10 justify-center">
-          <motion.div
+          <motion.a
+            href={"https://hotasm.vercel.app/"}
+            target="_blank"
+            rel="noopener noreferrer"
             initial="initial"
             animate="animate"
             variants={FadeInUp}
-            className={`w-72 h-[28rem] sm:w-64 sm:h-[24rem] xl:w-72 xl:h-[28rem] max-h-[28rem] flex flex-col gap-y-2 bg-pink-300 p-2`}
+            className={`shadow-lg shadow-pink-600 cursor-default w-72 h-[28rem] sm:w-64 sm:h-[24rem] xl:w-72 xl:h-[28rem] max-h-[28rem] flex flex-col gap-y-2 bg-pink-300 p-2`}
           >
             <Card1
-              src={"https://hotasm.vercel.app/"}
               img={
                 "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
               }
@@ -47,15 +49,17 @@ export default function Featured() {
                 "App for the translation of assembly code to binary that allows the definition of customized ISAs."
               }
             />
-          </motion.div>
-          <motion.div
+          </motion.a>
+          <motion.a
+            href={"https://bideas.herokuapp.com/"}
+            target="_blank"
+            rel="noopener noreferrer"
             initial="initial"
             animate="animate"
             variants={FadeInDown}
-            className={`w-72 h-[28rem] sm:w-64 sm:h-[24rem] xl:w-72 xl:h-[28rem] max-h-[28rem] flex flex-col gap-y-2 bg-yellow-300 p-2`}
+            className={`shadow-lg shadow-yellow-600 cursor-default w-72 h-[28rem] sm:w-64 sm:h-[24rem] xl:w-72 xl:h-[28rem] max-h-[28rem] flex flex-col gap-y-2 bg-yellow-300 p-2`}
           >
             <Card1
-              src={"https://bideas.herokuapp.com/"}
               img={
                 "https://images.unsplash.com/photo-1643447059942-70fef4193595?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80"
               }
@@ -63,9 +67,8 @@ export default function Featured() {
               description={
                 "Web application for recruiting qualified professionals and forming small work groups."
               }
-              className={"bg-yellow-300 translate-y-12"}
             />
-          </motion.div>
+          </motion.a>
         </div>
       </div>
     </motion.div>

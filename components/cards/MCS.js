@@ -4,7 +4,7 @@ export default function MCS({ variants }) {
   return (
     <motion.div
       variants={variants}
-      className="flex justify-center items-center w-40 h-56 relative rounded"
+      className="flex justify-center items-center w-28 h-44 sm:w-36 sm:h-52 md:w-40 md:h-56 relative bg-light bg-opacity-90"
     >
       <div className="w-full h-full absolute">
         <div className="card">

@@ -1,8 +1,9 @@
 import Card2 from "../components/cards/Card2";
 import MCS from "../components/cards/MCS";
-import { motion } from "framer-motion";
+import { motion, Reorder } from "framer-motion";
 import { stagger, variants } from "../animations/All";
 import { work } from "../data/work";
+import { useState } from "react";
 
 export default function All({ allWork }) {
   return (
@@ -11,18 +12,19 @@ export default function All({ allWork }) {
       className="flex justify-center gap-1 sm:gap-2 md:gap-3 mt-10"
     >
       <motion.div
+        layout
         initial="initial"
         animate="animate"
         variants={stagger}
         className="container flex flex-wrap gap-1 sm:gap-2 md:gap-3 justify-start"
       >
-        {allWork.map((i) => (
+        {allWork.map((item) => (
           <Card2
-            key={i.id}
-            img={work[i.id]}
-            resource={i.html_url}
-            title={String(i.name).replace("-", " ")}
-            category={String(i.topics[0]).replace("-", " ")}
+            key={item.id}
+            img={work[item.id]}
+            resource={item.html_url}
+            title={String(item.name).replace("-", " ")}
+            category={String(item.topics[0]).replace("-", " ")}
             object={"hexagon"}
             variants={variants}
           />

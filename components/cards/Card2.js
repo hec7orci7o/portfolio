@@ -11,6 +11,7 @@ export default function Card2({
 }) {
   return (
     <motion.div
+      layout
       variants={variants}
       className="w-28 h-44 sm:w-36 sm:h-52 md:w-40 md:h-56 flex justify-center items-center relative"
     >

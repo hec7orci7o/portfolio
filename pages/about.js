@@ -15,7 +15,7 @@ import Content from "../components/Content";
 import { FadeInUp, Stagger, Tool } from "../animations/About";
 import me from "/public/me.jpg";
 
-export default function Home() {
+export default function About() {
   return (
     <motion.div exit={{ opacity: 0 }} className="h-full">
       <div className="h-full flex flex-col md:flex-row gap-10 items-center justify-center sm:mt-16 md:mt-32 py-10">
@@ -59,7 +59,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="h-full flex flex-col md:flex-row gap-10 items-center justify-center sm:mt-16 md:mt-96 py-10 mb-16 sm:mb-32 md:mb-64">
+      <div className="h-full flex flex-col md:flex-row gap-10 items-center justify-center sm:mt-16 md:mt-96 pt-10 pb-16 sm:pb-32 md:pb-64">
         <div className="flex-1 h-full flex items-center justify-center">
           <Content
             title="My Toolkit"
@@ -91,20 +91,20 @@ export default function Home() {
             <>
               <motion.div
                 variants={Tool}
-                className="flex items-center justify-center w-36 h-16 shadow hover:text-red-600"
+                className="flex items-center justify-center w-36 h-16 shadow hover:text-red-600 dark:bg-light dark:hover:bg-white"
               >
                 <SiLinux className="text-4xl" />
               </motion.div>
               <div className="flex gap-2">
                 <motion.div
                   variants={Tool}
-                  className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-600"
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-600 dark:bg-light dark:hover:bg-white"
                 >
                   <SiDocker className="text-4xl" />
                 </motion.div>
                 <motion.div
                   variants={Tool}
-                  className="flex items-center justify-center w-36 h-16 shadow hover:text-orange-500"
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-orange-500 dark:bg-light dark:hover:bg-white"
                 >
                   <SiGit className="text-4xl" />
                 </motion.div>
@@ -112,19 +112,19 @@ export default function Home() {
               <div className="flex gap-2">
                 <motion.div
                   variants={Tool}
-                  className="flex items-center justify-center w-36 h-16 shadow hover:text-indigo-800"
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-indigo-800 dark:bg-light dark:hover:bg-white"
                 >
                   <SiCplusplus className="text-4xl" />
                 </motion.div>
                 <motion.div
                   variants={Tool}
-                  className="flex items-center justify-center w-36 h-16 shadow hover:text-yellow-300"
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-yellow-300 dark:bg-light dark:hover:bg-white"
                 >
                   <SiJavascript className="text-4xl" />
                 </motion.div>
                 <motion.div
                   variants={Tool}
-                  className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-500"
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-500 dark:bg-light dark:hover:bg-white"
                 >
                   <SiPython className="text-4xl" />
                 </motion.div>
@@ -132,13 +132,13 @@ export default function Home() {
               <div className="flex gap-2">
                 <motion.div
                   variants={Tool}
-                  className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-400"
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-400 dark:bg-light dark:hover:bg-white"
                 >
                   <SiReact className="text-4xl" />
                 </motion.div>
                 <motion.div
                   variants={Tool}
-                  className="flex items-center justify-center w-36 h-16 shadow hover:text-green-400"
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-green-400 dark:bg-light dark:hover:bg-white"
                 >
                   <SiExpress className="text-4xl" />
                 </motion.div>
@@ -149,13 +149,13 @@ export default function Home() {
               <div className="flex gap-2">
                 <motion.div
                   variants={Tool}
-                  className="flex items-center justify-center w-36 h-16 shadow hover:text-red-600"
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-red-600 dark:bg-light dark:hover:bg-white"
                 >
                   <SiLinux className="text-4xl" />
                 </motion.div>
                 <motion.div
                   variants={Tool}
-                  className="flex items-center justify-center w-36 h-16 shadow hover:text-orange-500"
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-orange-500 dark:bg-light dark:hover:bg-white"
                 >
                   <SiGit className="text-4xl" />
                 </motion.div>
@@ -164,13 +164,13 @@ export default function Home() {
               <div className="flex gap-2">
                 <motion.div
                   variants={Tool}
-                  className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-600"
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-600 dark:bg-light dark:hover:bg-white"
                 >
                   <SiDocker className="text-4xl" />
                 </motion.div>
                 <motion.div
                   variants={Tool}
-                  className="flex items-center justify-center w-36 h-16 shadow hover:text-indigo-800"
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-indigo-800 dark:bg-light dark:hover:bg-white"
                 >
                   <SiCplusplus className="text-4xl" />
                 </motion.div>
@@ -178,13 +178,13 @@ export default function Home() {
               <div className="flex gap-2">
                 <motion.div
                   variants={Tool}
-                  className="flex items-center justify-center w-36 h-16 shadow hover:text-yellow-300"
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-yellow-300 dark:bg-light dark:hover:bg-white"
                 >
                   <SiJavascript className="text-4xl" />
                 </motion.div>
                 <motion.div
                   variants={Tool}
-                  className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-500"
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-500 dark:bg-light dark:hover:bg-white"
                 >
                   <SiPython className="text-4xl" />
                 </motion.div>
@@ -192,13 +192,13 @@ export default function Home() {
               <div className="flex gap-2">
                 <motion.div
                   variants={Tool}
-                  className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-400"
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-blue-400 dark:bg-light dark:hover:bg-white"
                 >
                   <SiReact className="text-4xl" />
                 </motion.div>
                 <motion.div
                   variants={Tool}
-                  className="flex items-center justify-center w-36 h-16 shadow hover:text-green-400"
+                  className="flex items-center justify-center w-36 h-16 shadow hover:text-green-400 dark:bg-light dark:hover:bg-white"
                 >
                   <SiExpress className="text-4xl" />
                 </motion.div>
