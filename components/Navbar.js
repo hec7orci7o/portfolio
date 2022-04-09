@@ -8,7 +8,7 @@ export default function Navbar({ children }) {
   return (
     <div className="container mx-auto flex justify-between py-3 px-4">
       <div className="flex gap-10 md:gap-16 lg:gap-20 sm:mx-0">
-        <div className="col-start-2 col-span-2 hidden sm:flex flex-col opacity-90 dark:opacity-80">
+        <div className="col-start-2 col-span-2 hidden sm:flex flex-col gap-y-1 opacity-90 dark:opacity-80">
           <span className="font-sans font-medium text-sm text-black dark:text-light">
             Hector Toral
           </span>
@@ -16,7 +16,7 @@ export default function Navbar({ children }) {
             ©2022
           </span>
         </div>
-        <div className="col-start-4 col-span-1 flex flex-col gap-y-1">
+        <div className="col-start-4 col-span-1 flex flex-col gap-y-1.5">
           {[
             { src: "/about", name: "About" },
             { src: "/articles", name: "Articles" },
@@ -36,7 +36,7 @@ export default function Navbar({ children }) {
             </div>
           ))}
         </div>
-        <div className="col-start-5 col-span-1 flex flex-col gap-y-1">
+        <div className="col-start-5 col-span-1 flex flex-col gap-y-1.5">
           {[
             { src: "/featured", name: "Featured" },
             { src: "/latest", name: "Latest" },
@@ -59,7 +59,7 @@ export default function Navbar({ children }) {
         </div>
       </div>
 
-      <div className="col-start-11 col-span-2 hidden sm:flex flex-col gap-y-1">
+      <div className="col-start-11 col-span-2 hidden sm:flex flex-col gap-y-1.5">
         {[
           { src: "https://github.com/hec7orci7o", name: "Github" },
           { src: "https://www.linkedin.com/in/hec7or/", name: "Linkedin" },

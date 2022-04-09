@@ -18,7 +18,7 @@ export default function Card2({
       <div className="w-full h-full relative bg-black">
         <Image
           src={img}
-          alt=""
+          alt={title}
           layout="fill"
           className="object-cover object-center select-none opacity-70 "
         />
