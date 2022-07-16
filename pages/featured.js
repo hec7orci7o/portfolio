@@ -7,7 +7,7 @@ export default function Featured () {
   return (
     <motion.div
       exit={{ opacity: 0 }}
-      className="flex flex-col xl:flex-row items-center justify-center py-10 gap-10 mt-24"
+      className="flex flex-col xl:flex-row items-center justify-center py-10 gap-10"
     >
       <div className="flex-1 flex items-center justify-center">
         <Content
@@ -38,7 +38,7 @@ export default function Featured () {
             initial="initial"
             animate="animate"
             variants={FadeInUp}
-            className={'shadow-lg shadow-pink-600 cursor-default w-72 h-[28rem] sm:w-64 sm:h-[24rem] xl:w-72 xl:h-[28rem] max-h-[28rem] flex flex-col gap-y-2 bg-pink-300 p-2'}
+            className={'shadow-lg shadow-pink-600 cursor-default w-72 h-[28rem] sm:w-64 sm:h-[24rem] xl:w-72 xl:h-[28rem] max-h-[28rem] flex flex-col gap-y-2 bg-pink-300 p-2 lg:translate-y-1/4 xl:translate-y-0'}
           >
             <Card1
               img={

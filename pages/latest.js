@@ -9,7 +9,7 @@ export default function Latest () {
   return (
     <motion.div
       exit={{ opacity: 0 }}
-      className="h-full flex flex-col xl:flex-row items-center justify-center gap-10 mt-10 xl:mt-28"
+      className="h-full flex flex-col xl:flex-row items-center justify-center gap-10"
     >
       <div className="flex-1 h-full flex items-center justify-center">
         <Content
