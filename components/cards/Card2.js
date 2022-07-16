@@ -1,13 +1,13 @@
-import Image from "next/image";
-import { motion } from "framer-motion";
+import Image from 'next/image'
+import { motion } from 'framer-motion'
 
-export default function Card2({
+export default function Card2 ({
   img,
   resource,
   title,
   category,
   object,
-  variants,
+  variants
 }) {
   return (
     <motion.div
@@ -43,5 +43,5 @@ export default function Card2({
         </div>
       </a>
     </motion.div>
-  );
+  )
 }

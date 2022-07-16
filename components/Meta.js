@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Head from 'next/head'
 
 const Meta = ({ title, keywords, description }) => {
   return (
@@ -11,13 +11,13 @@ const Meta = ({ title, keywords, description }) => {
       <title>{title}</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-  );
-};
+  )
+}
 
 Meta.defaultProps = {
-  title: "Hec7orci7o",
-  keywords: "Developer, Engineer",
-  description: "Software Engineering Student, Developer",
-};
+  title: 'Hec7orci7o',
+  keywords: 'Developer, Engineer',
+  description: 'Software Engineering Student, Developer'
+}
 
-export default Meta;
+export default Meta

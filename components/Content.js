@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
-import { FadeInRight } from "../animations/ContentCard";
+import { motion } from 'framer-motion'
+import { FadeInRight } from '../animations/ContentCard'
 
-export default function Content({ title, text }) {
+export default function Content ({ title, text }) {
   return (
     <motion.div
       initial="initial"
@@ -14,5 +14,5 @@ export default function Content({ title, text }) {
         {text}
       </p>
     </motion.div>
-  );
+  )
 }

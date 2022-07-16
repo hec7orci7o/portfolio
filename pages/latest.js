@@ -1,11 +1,11 @@
-import Content from "../components/Content";
-import Card2 from "../components/cards/Card2";
-import { motion } from "framer-motion";
-import { stagger, variants } from "../animations/Latest";
-import { work } from "../data/work";
+import Content from '../components/Content'
+import Card2 from '../components/cards/Card2'
+import { motion } from 'framer-motion'
+import { stagger, variants } from '../animations/Latest'
+import { work } from '../data/work'
 
-export default function Latest() {
-  const latest = work.filter(item => item.name !== "portfolio" ).slice(0,6)
+export default function Latest () {
+  const latest = work.filter(item => item.name !== 'portfolio').slice(0, 6)
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -50,5 +50,5 @@ export default function Latest() {
         </motion.div>
       </div>
     </motion.div>
-  );
+  )
 }

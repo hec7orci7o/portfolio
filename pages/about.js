@@ -1,6 +1,6 @@
-import Image from "next/image";
-import { isMobileOnly } from "react-device-detect";
-import { motion } from "framer-motion";
+import Image from 'next/image'
+import { isMobileOnly } from 'react-device-detect'
+import { motion } from 'framer-motion'
 import {
   SiLinux,
   SiDocker,
@@ -9,13 +9,12 @@ import {
   SiJavascript,
   SiPython,
   SiReact,
-  SiExpress,
-} from "react-icons/si";
-import Content from "../components/Content";
-import { FadeInUp, Stagger, Tool } from "../animations/About";
-import me from "/public/me.jpg";
+  SiExpress
+} from 'react-icons/si'
+import Content from '../components/Content'
+import { FadeInUp, Stagger, Tool } from '../animations/About'
 
-export default function About() {
+export default function About () {
   return (
     <motion.div exit={{ opacity: 0 }} className="h-full">
       <div className="h-full flex flex-col md:flex-row gap-10 items-center justify-center sm:mt-16 md:mt-32 py-10">
@@ -50,7 +49,7 @@ export default function About() {
             className="w-80 h-80 sm:w-96 sm:h-96 relative"
           >
             <Image
-              src={me}
+              src={'/me.jpg'}
               alt="Picture of the author"
               layout="fill"
               className="object-cover"
@@ -87,7 +86,8 @@ export default function About() {
           viewport={{ once: true, amount: 0.4 }}
           className="flex-1 h-full flex flex-col items-center justify-center gap-2"
         >
-          {!isMobileOnly ? (
+          {!isMobileOnly
+            ? (
             <>
               <motion.div
                 variants={Tool}
@@ -144,7 +144,8 @@ export default function About() {
                 </motion.div>
               </div>
             </>
-          ) : (
+              )
+            : (
             <>
               <div className="flex gap-2">
                 <motion.div
@@ -204,9 +205,9 @@ export default function About() {
                 </motion.div>
               </div>
             </>
-          )}
+              )}
         </motion.div>
       </div>
     </motion.div>
-  );
+  )
 }

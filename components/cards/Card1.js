@@ -1,6 +1,6 @@
-import Image from "next/image";
+import Image from 'next/image'
 
-export default function Card1({ img, title, description }) {
+export default function Card1 ({ img, title, description }) {
   return (
     <>
       <div className="h-72 sm:h-60 xl:h-72 w-full relative cursor-pointer">
@@ -20,5 +20,5 @@ export default function Card1({ img, title, description }) {
         </p>
       </div>
     </>
-  );
+  )
 }

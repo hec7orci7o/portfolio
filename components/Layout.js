@@ -1,7 +1,7 @@
-import Meta from "./Meta"
-import Navbar from "./Navbar";
+import Meta from './Meta'
+import Navbar from './Navbar'
 
-export default function Layout({ children }) {
+export default function Layout ({ children }) {
   return (
     <>
     <Meta />
@@ -10,5 +10,5 @@ export default function Layout({ children }) {
       <main className="container mx-auto scroll-smooth">{children}</main>
     </div>
     </>
-  );
+  )
 }

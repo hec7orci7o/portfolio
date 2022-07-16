@@ -1,10 +1,10 @@
-import Card2 from "../components/cards/Card2";
-import MCS from "../components/cards/MCS";
-import { motion } from "framer-motion";
-import { stagger, variants } from "../animations/All";
-import { work } from "../data/work";
+import Card2 from '../components/cards/Card2'
+import MCS from '../components/cards/MCS'
+import { motion } from 'framer-motion'
+import { stagger, variants } from '../animations/All'
+import { work } from '../data/work'
 
-export default function All() {
+export default function All () {
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -31,5 +31,5 @@ export default function All() {
         <MCS variants={variants} />
       </motion.div>
     </motion.div>
-  );
+  )
 }

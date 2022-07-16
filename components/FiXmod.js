@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
-import { stagger, variants } from "../animations/FiXmod";
+import { motion } from 'framer-motion'
+import { stagger, variants } from '../animations/FiXmod'
 
-export default function FiXmod({ className }) {
+export default function FiXmod ({ className }) {
   return (
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
@@ -21,5 +21,5 @@ export default function FiXmod({ className }) {
       <motion.line x1="6" y1="6" x2="18" y2="18" variants={variants} />
       <motion.line x1="18" y1="6" x2="6" y2="18" variants={variants} />
     </motion.svg>
-  );
+  )
 }

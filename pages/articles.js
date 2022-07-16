@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
-export default function Articles() {
+export default function Articles () {
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -11,5 +11,5 @@ export default function Articles() {
         New articles will be included as soon as possible.
       </p>
     </motion.div>
-  );
+  )
 }

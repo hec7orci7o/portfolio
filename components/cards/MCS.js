@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
-export default function MCS({ variants }) {
+export default function MCS ({ variants }) {
   return (
     <motion.div
       variants={variants}
@@ -22,5 +22,5 @@ export default function MCS({ variants }) {
         </div>
       </div>
     </motion.div>
-  );
+  )
 }
