@@ -1,11 +1,10 @@
 import Card2 from "../components/cards/Card2";
 import MCS from "../components/cards/MCS";
-import { motion, Reorder } from "framer-motion";
+import { motion } from "framer-motion";
 import { stagger, variants } from "../animations/All";
 import { work } from "../data/work";
-import { useState } from "react";
 
-export default function All({ allWork }) {
+export default function All() {
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -18,14 +17,14 @@ export default function All({ allWork }) {
         variants={stagger}
         className="container flex flex-wrap gap-1 sm:gap-2 md:gap-3 justify-start"
       >
-        {allWork.map((item) => (
+        {work.map((item) => (
           <Card2
             key={item.id}
-            img={work[item.id]}
+            img={item.img}
             resource={item.html_url}
-            title={String(item.name).replace("-", " ")}
-            category={String(item.topics[0]).replace("-", " ")}
-            object={"hexagon"}
+            title={item.name}
+            category={item.topic}
+            object={item.object}
             variants={variants}
           />
         ))}
@@ -33,15 +32,4 @@ export default function All({ allWork }) {
       </motion.div>
     </motion.div>
   );
-}
-
-export async function getServerSideProps() {
-  const { data: allWork } = await fetch(
-    `${process.env.NEXT_URL}/api/github?q=all`
-  )
-    .then((res) => res.json())
-    .catch((err) => console.error(err));
-  return {
-    props: { allWork },
-  };
 }

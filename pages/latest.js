@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import { stagger, variants } from "../animations/Latest";
 import { work } from "../data/work";
 
-export default function Latest({ allWork }) {
+export default function Latest() {
+  const latest = work.filter(item => item.name !== "portfolio" ).slice(0,6)
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -35,14 +36,14 @@ export default function Latest({ allWork }) {
           variants={stagger}
           className="max-w-prose xl:w-full flex flex-wrap gap-2 justify-center"
         >
-          {allWork.map((i) => (
+          {latest.map((item) => (
             <Card2
-              key={i.id}
-              img={work[i.id]}
-              resource={i.html_url}
-              title={String(i.name).replace("-", " ")}
-              category={String(i.topics[0]).replace("-", " ")}
-              object={"hexagon"}
+              key={item.id}
+              img={item.img}
+              resource={item.html_url}
+              title={item.name}
+              category={item.topics}
+              object={item.object}
               variants={variants}
             />
           ))}
@@ -50,15 +51,4 @@ export default function Latest({ allWork }) {
       </div>
     </motion.div>
   );
-}
-
-export async function getServerSideProps() {
-  const { data: allWork } = await fetch(
-    `${process.env.NEXT_URL}/api/github?q=6`
-  )
-    .then((res) => res.json())
-    .catch((err) => console.error(err));
-  return {
-    props: { allWork },
-  };
 }
